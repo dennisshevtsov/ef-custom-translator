@@ -9,6 +9,11 @@ namespace EfCustomTranslator;
 
 public sealed class EfCustomTranslatorDbContext : DbContext
 {
+  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+  {
+    optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=ef-custom-translator-db;Username=dev;Password=dev");
+  }
+
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
     EntityTypeBuilder<ProductEntity> entityTypeBuilder = modelBuilder.Entity<ProductEntity>();
