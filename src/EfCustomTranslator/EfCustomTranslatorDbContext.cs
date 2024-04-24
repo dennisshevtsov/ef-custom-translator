@@ -22,6 +22,10 @@ public sealed class EfCustomTranslatorDbContext : DbContext
 
     entityTypeBuilder.Property(entity => entity.ProductId).IsRequired().HasColumnName("product_id");
     entityTypeBuilder.Property(entity => entity.Name     ).IsRequired().HasColumnName("name"      );
-    entityTypeBuilder.Property(entity => entity.Price    ).IsRequired().HasColumnName("price"     );
+
+    entityTypeBuilder.Property(entity => entity.Price)
+                     .IsRequired()
+                     .HasColumnName("price")
+                     .HasConversion(price => price.ToString(), price => Money.Parce(price));
   }
 }
