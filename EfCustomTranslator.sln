@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCustomTranslator", "src\EfCustomTranslator\EfCustomTranslator.csproj", "{F99F1A07-8141-4B45-AD76-E3381B71F869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EfCustomTranslator", "src\EfCustomTranslator\EfCustomTranslator.csproj", "{F99F1A07-8141-4B45-AD76-E3381B71F869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCustomTranslator.Test", "test\EfCustomTranslator.Test\EfCustomTranslator.Test.csproj", "{8A79EA95-B0BD-4D05-A9B0-F11964B8438C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F99F1A07-8141-4B45-AD76-E3381B71F869}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F99F1A07-8141-4B45-AD76-E3381B71F869}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F99F1A07-8141-4B45-AD76-E3381B71F869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A79EA95-B0BD-4D05-A9B0-F11964B8438C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A79EA95-B0BD-4D05-A9B0-F11964B8438C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A79EA95-B0BD-4D05-A9B0-F11964B8438C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A79EA95-B0BD-4D05-A9B0-F11964B8438C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
